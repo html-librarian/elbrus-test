@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Описание главной страницы">
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="/assets/css/vendor.min.css">
+        <link rel="stylesheet" href="/assets/css/style.min.css">
+        <link rel="stylesheet" href="/assets/css/home/style.min.css">
+    </link></link></link></meta></meta></meta></meta></head>
+    <body class="page page-home">
+        <main>
+            <div class="booking">
+                <button class="button button--primary w-100" type="button" data-modal="#booking">Забронировать</button>
+            </div>
+        </main>
+        <div class="modal slide--left align-items-center justify-content-center" id="booking">
+            <div class="modal__container">
+                <div class="modal__header">
+                    <div class="modal__title"> 
+                        <h4 class="title">Выберите заезд</h4>
+                        <div class="subtitle">Восхождение на Килиманджаро</div>
+                    </div>
+                    <button class="modal__close" type="button" data-modal="#booking">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline-svg">
+    <path d="M8.207 7.49997L14.853 14.146L14.146 14.853L7.5 8.20697L0.853996 14.853L0.146996 14.146L6.793 7.49997L0.145996 0.853973L0.852996 0.146973L7.5 6.79297L14.146 0.146973L14.853 0.853973L8.207 7.49997Z" fill="#4DD2A3"/>
+</svg>
+                    </button>
+                </div>
+                <div class="modal__body">
+                    <div class="swiper-container booking-list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__status">
+                                        <h5 class="text--danger">Открытая дата</h5>
+                                    </div>
+                                    <div class="card__info justify-content-center">
+                                        <div class="prices text--center">
+                                            <div class="price price--old text--secondary">110 000&nbsp;&#8381;</div>
+                                            <div class="price">78 000&nbsp;&#8381;</div>
+                                            <div class="date">22.08.22</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__description">Забронировать этот тур без привязки к&nbsp;определённой дате и&nbsp;выбрать заезд позже в&nbsp;любое время без дополнительной оплаты.</div>
+                                    <div class="card__action">
+                                        <button class="button button--primary w-100" type="button" data-modal="#booking-form">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__status">
+                                        <div class="dates-title">Ближайший заезд</div>
+                                        <div class="dates">18.08.2022 - 02.09.2022</div>
+                                    </div>
+                                    <div class="card__info justify-content-between">
+                                        <div class="prices text--left">
+                                            <div class="price price--old text--secondary">110 000&nbsp;&#8381;</div>
+                                            <div class="price">78 000&nbsp;&#8381;</div>
+                                            <div class="date">22.08.22</div>
+                                        </div>
+                                        <div class="place-left">Осталось:
+                                            <div class="text--danger">1 место</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__gid">
+                                        <div class="gid"> 
+                                            <div class="gid__header"><img class="gid__avatar" src="/assets/images/avatar.jpg"/>
+                                                <div class="gid__info text--secondary">Гид:
+                                                    <div class="gid__name text--primary">Сергей</div>
+                                                    <div class="gid__surname text--primary">Пугачев</div>
+                                                </div>
+                                            </div>
+                                            <div class="gid__body">Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__action">
+                                        <button class="button button--primary w-100" type="button" data-modal="#booking-form">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__status">
+                                        <div class="dates-title">Ближайший заезд</div>
+                                        <div class="dates">18.08.2022 - 02.09.2022</div>
+                                    </div>
+                                    <div class="card__info justify-content-between">
+                                        <div class="prices text--left">
+                                            <div class="price price--old text--secondary">110 000&nbsp;&#8381;</div>
+                                            <div class="price">78 000&nbsp;&#8381;</div>
+                                            <div class="date">22.08.22</div>
+                                        </div>
+                                        <div class="place-left">Осталось:
+                                            <div class="text--danger">1 место</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__gid">
+                                        <div class="gid"> 
+                                            <div class="gid__header"><img class="gid__avatar" src="/assets/images/avatar.jpg"/>
+                                                <div class="gid__info text--secondary">Гид:
+                                                    <div class="gid__name text--primary">Сергей</div>
+                                                    <div class="gid__surname text--primary">Пугачев</div>
+                                                </div>
+                                            </div>
+                                            <div class="gid__body">Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__action">
+                                        <button class="button button--primary w-100" type="button" data-modal="#booking-form">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__status">
+                                        <div class="dates-title">Ближайший заезд</div>
+                                        <div class="dates">18.08.2022 - 02.09.2022</div>
+                                    </div>
+                                    <div class="card__info justify-content-between">
+                                        <div class="prices text--left">
+                                            <div class="price price--old text--secondary">110 000&nbsp;&#8381;</div>
+                                            <div class="price">78 000&nbsp;&#8381;</div>
+                                            <div class="date">22.08.22</div>
+                                        </div>
+                                        <div class="place-left">Осталось:
+                                            <div class="text--danger">1 место</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__gid">
+                                        <div class="gid"> 
+                                            <div class="gid__header"><img class="gid__avatar" src="/assets/images/avatar.jpg"/>
+                                                <div class="gid__info text--secondary">Гид:
+                                                    <div class="gid__name text--primary">Сергей</div>
+                                                    <div class="gid__surname text--primary">Пугачев</div>
+                                                </div>
+                                            </div>
+                                            <div class="gid__body">Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__action">
+                                        <button class="button button--primary w-100" type="button" data-modal="#booking-form">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__status">
+                                        <div class="dates-title">Ближайший заезд</div>
+                                        <div class="dates">18.08.2022 - 02.09.2022</div>
+                                    </div>
+                                    <div class="card__info justify-content-between">
+                                        <div class="prices text--left">
+                                            <div class="price price--old text--secondary">110 000&nbsp;&#8381;</div>
+                                            <div class="price">78 000&nbsp;&#8381;</div>
+                                            <div class="date">22.08.22</div>
+                                        </div>
+                                        <div class="place-left">Осталось:
+                                            <div class="text--danger">1 место</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__gid">
+                                        <div class="gid"> 
+                                            <div class="gid__header"><img class="gid__avatar" src="/assets/images/avatar.jpg"/>
+                                                <div class="gid__info text--secondary">Гид:
+                                                    <div class="gid__name text--primary">Сергей</div>
+                                                    <div class="gid__surname text--primary">Пугачев</div>
+                                                </div>
+                                            </div>
+                                            <div class="gid__body">Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__action">
+                                        <button class="button button--primary w-100" type="button" data-modal="#booking-form">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__status">
+                                        <div class="dates-title">Ближайший заезд</div>
+                                        <div class="dates">18.08.2022 - 02.09.2022</div>
+                                    </div>
+                                    <div class="card__info justify-content-between">
+                                        <div class="prices text--left">
+                                            <div class="price price--old text--secondary">110 000&nbsp;&#8381;</div>
+                                            <div class="price">78 000&nbsp;&#8381;</div>
+                                            <div class="date">22.08.22</div>
+                                        </div>
+                                        <div class="place-left">Осталось:
+                                            <div class="text--danger">1 место</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__gid">
+                                        <div class="gid"> 
+                                            <div class="gid__header"><img class="gid__avatar" src="/assets/images/avatar.jpg"/>
+                                                <div class="gid__info text--secondary">Гид:
+                                                    <div class="gid__name text--primary">Сергей</div>
+                                                    <div class="gid__surname text--primary">Пугачев</div>
+                                                </div>
+                                            </div>
+                                            <div class="gid__body">Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__action">
+                                        <button class="button button--primary w-100" type="button" data-modal="#booking-form">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__status">
+                                        <div class="dates-title">Ближайший заезд</div>
+                                        <div class="dates">18.08.2022 - 02.09.2022</div>
+                                    </div>
+                                    <div class="card__info justify-content-between">
+                                        <div class="prices text--left">
+                                            <div class="price price--old text--secondary">110 000&nbsp;&#8381;</div>
+                                            <div class="price">78 000&nbsp;&#8381;</div>
+                                            <div class="date">22.08.22</div>
+                                        </div>
+                                        <div class="place-left">Осталось:
+                                            <div class="text--danger">1 место</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__gid">
+                                        <div class="gid"> 
+                                            <div class="gid__header"><img class="gid__avatar" src="/assets/images/avatar.jpg"/>
+                                                <div class="gid__info text--secondary">Гид:
+                                                    <div class="gid__name text--primary">Сергей</div>
+                                                    <div class="gid__surname text--primary">Пугачев</div>
+                                                </div>
+                                            </div>
+                                            <div class="gid__body">Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__action">
+                                        <button class="button button--primary w-100" type="button" data-modal="#booking-form">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__status">
+                                        <div class="dates-title">Ближайший заезд</div>
+                                        <div class="dates">18.08.2022 - 02.09.2022</div>
+                                    </div>
+                                    <div class="card__info justify-content-between">
+                                        <div class="prices text--left">
+                                            <div class="price price--old text--secondary">110 000&nbsp;&#8381;</div>
+                                            <div class="price">78 000&nbsp;&#8381;</div>
+                                            <div class="date">22.08.22</div>
+                                        </div>
+                                        <div class="place-left">Осталось:
+                                            <div class="text--danger">1 место</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__gid">
+                                        <div class="gid"> 
+                                            <div class="gid__header"><img class="gid__avatar" src="/assets/images/avatar.jpg"/>
+                                                <div class="gid__info text--secondary">Гид:
+                                                    <div class="gid__name text--primary">Сергей</div>
+                                                    <div class="gid__surname text--primary">Пугачев</div>
+                                                </div>
+                                            </div>
+                                            <div class="gid__body">Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__action">
+                                        <button class="button button--primary w-100" type="button" data-modal="#booking-form">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/vendor.bundle.js"> </script>
+        <script src="/assets/js/app.bundle.js"> </script>
+        <script src="/assets/js/home.bundle.js"> </script>
+    </body>
+</html>
