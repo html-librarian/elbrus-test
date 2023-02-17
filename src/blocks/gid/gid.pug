@@ -1,0 +1,8 @@
+mixin gid(props)
+    .gid 
+        .gid__header
+            img.gid__avatar(src=props.img_url, alt=props.avatar_alt)
+            .gid__info.text--secondary Гид:
+                .gid__name.text--primary!= props.name
+                .gid__surname.text--primary!= props.surname
+        .gid__body!= props.description

@@ -1,0 +1,13 @@
+// Import стилей принадлежащих только этой странице
+@import '../../assets/scss/variables';
+@import '../../blocks/booking/booking';
+@import '../../blocks/gid/gid';
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+}

@@ -1,0 +1,82 @@
+.booking {
+    width: 100%;
+}
+
+.modal {
+    .booking-item {
+        padding: 8px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: $white;
+        border-radius: 4px;
+        box-shadow: 0px 4px 24px rgba($black, 0.06);
+        width: 100%;
+        padding: 16px 16px 24px;
+        cursor: grab;
+        
+        &__status {
+            text-align: center;
+
+            h5 {
+                font-size: 16px;
+                font-weight: 600;
+
+                &.text--danger {
+                    margin-top: 17px;
+                }
+            }
+        }
+
+        &__info {
+            display: flex;
+            margin-top: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba($secondary, 0.2);
+        }
+
+        &__description {
+            margin: 24px 0;
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        &__action {
+            margin-top: auto;
+        }
+
+        .price {
+            font-weight: 600;
+            font-size: 16px;
+
+            &--old {
+                font-weight: 400;
+                font-size: 12px;
+                color: $secondary;
+                text-decoration: line-through;
+            }
+        }
+
+        .date,
+        .dates-title,
+        .place-left {
+            font-weight: 400;
+            font-size: 12px;
+            color: $secondary;
+        }
+
+        .dates {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .place-left {
+            text-align: right;
+        }
+    }
+}

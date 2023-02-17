@@ -1,0 +1,98 @@
+.modal {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    transition: 0.5s ease-in-out;
+    background-color: $white;
+    visibility: hidden;
+    opacity: 0.4;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: rgba($black, 0.3);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: $white;
+        overflow: hidden;
+    }
+
+    &__header {
+        padding: 0 16px;
+    }
+
+    &__close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        padding: 1px;
+        cursor: pointer;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.4;
+
+        .title {
+            margin-top: 40px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.28px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            font-weight: 400;
+            font-size: 12px;
+            color: $secondary;
+        }
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 16px;
+        width: 100%;
+    }
+
+    &.slide {
+        &--left {
+            right: -100%;
+        }
+    }
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+
+        &.slide {
+            &--left {
+                right: 0;
+            }
+        }
+    }
+    .swiper-container {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    .swiper-wrapper {
+        width: 100%;
+        height: auto !important;
+    }
+    .swiper-slide {
+        display: flex;
+        width: 100%;
+        max-width: 240px;
+        height: 100%;
+    }
+}

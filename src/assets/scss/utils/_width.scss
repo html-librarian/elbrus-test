@@ -1,0 +1,10 @@
+$widths: (
+    "100": 100%
+);
+
+
+@each $name, $size in $widths {
+    .w-#{$name} {
+        width: $size;
+    }
+}

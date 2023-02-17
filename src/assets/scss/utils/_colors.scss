@@ -1,0 +1,17 @@
+$colors: (
+    "white": $white,
+    "primary": $primary,
+    "secondary": $secondary,
+    "danger": $danger,
+    "black": $black,
+);
+
+@each $name, $color in $colors {
+    .text--#{$name} {
+        color: $color;
+    }
+
+    .background--#{$name} {
+        color: $color;
+    }
+}

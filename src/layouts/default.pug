@@ -1,0 +1,35 @@
+block vars
+    -
+        var title = typeof title !== 'undefined' ? title : null;
+        var description = typeof description !== 'undefined' ? description : null;
+        var keywords = typeof keywords !== 'undefined' ? keywords : null;
+
+include ../UI/ui
+
+doctype html
+html(lang=lang)
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="description", content=description)
+        if title !== null
+            title!= title
+        link(rel="stylesheet" href="/assets/css/vendor.min.css")
+        link(rel="stylesheet" href="/assets/css/style.min.css")
+        if custumStyle
+            link(rel="stylesheet" href="/assets/css/" + pageName + "/style.min.css")
+
+        block styles
+    body(class=pageName !== undefined || null ? 'page page-' + pageName : 'page')
+
+        main
+            block content
+
+        block modal
+
+        script(src="/assets/js/vendor.bundle.js") 
+        script(src="/assets/js/app.bundle.js") 
+
+        if custumScript
+            script(src="/assets/js/" + pageName + ".bundle.js") 

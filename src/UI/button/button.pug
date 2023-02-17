@@ -1,0 +1,16 @@
+mixin Button(props)
+    if props.variant === "link"
+        a.button(
+            href=props.link ? props.link : "#",
+            class=props.color ? "button--"+props.color : ""
+            class=props.class,
+            class=props.disabled ? "button--disabled" : ""
+        )!= props.content
+    else 
+        button.button(
+            type=props.type,
+            class=props.color ? "button--"+props.color : ""
+            class=props.class,
+            class=props.disabled ? "button--disabled" : ""
+            data-modal=props.modal ? props.modal : ""
+        )!= props.content

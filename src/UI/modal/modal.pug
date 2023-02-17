@@ -1,0 +1,61 @@
+include ../../blocks/gid/gid.pug
+
+mixin Modal(props)
+    .modal(
+        id=props.id,
+        class=props.slide ? "slide--" + props.slide : ""
+        class=props.classes ? props.classes : ""
+    )
+        .modal__container
+            .modal__header
+                .modal__title 
+                    h4.title!= props.title
+                    .subtitle!= props.subtitle
+                button.modal__close(type="button" data-modal="#"+props.id)
+                    svg.inline-svg(src="close.svg")
+            .modal__body
+                .swiper-container.booking-list
+                    .swiper-wrapper
+                        if props.data
+                                each item in props.data
+                                    .swiper-slide
+                                        .card
+                                            .card__status
+                                                if item.status
+                                                    h5(class="text--" + item.status)!= item.status_title
+                                                if item.date
+                                                    .dates-title Ближайший заезд
+                                                    .dates!= item.date.from + " - " + item.date.to
+                                            .card__info(class=item.places_left ? "justify-content-between" : "justify-content-center")
+                                                if item.price
+                                                    .prices(class=item.places_left ? "text--left" : "text--center")
+                                                        if item.price.old
+                                                            .price.price--old.text--secondary!= item.price.old
+                                                                | &nbsp;&#8381;
+                                                        if item.price.current
+                                                            .price!= item.price.current
+                                                                | &nbsp;&#8381;
+                                                        if item.date_end
+                                                            .date!= item.date_end
+                                                if item.places_left
+                                                    .place-left Осталось:
+                                                        .text--danger!= item.places_left + " место"
+
+                                            if item.description
+                                                .card__description!= item.description
+                                            if item.gid
+                                                .card__gid
+                                                    +gid({
+                                                        name: "Сергей",
+                                                        surname: "Пугачев",
+                                                        description: "Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»",
+                                                        img_url: "/assets/images/avatar.jpg"
+                                                    })
+                                            .card__action
+                                                +Button({
+                                                    type: "button",
+                                                    content: "Забронировать",
+                                                    color: "primary",
+                                                    class: "w-100",
+                                                    modal: "#booking-form"
+                                                })

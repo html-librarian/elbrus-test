@@ -1,0 +1,20 @@
+button,
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7.5px;
+    border: none;
+    font-family: $base-font-family;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &--primary {
+        background-color: $primary;
+    }
+}

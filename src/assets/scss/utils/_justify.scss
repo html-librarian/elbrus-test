@@ -1,0 +1,12 @@
+$positions: (
+    "start": flex-start,
+    "end": flex-end,
+    "between": space-between,
+    "center": center
+);
+
+@each $name, $position in $positions {
+    .justify-content-#{$name} {
+        justify-content: $position;
+    }
+}

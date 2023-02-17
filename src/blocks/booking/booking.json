@@ -1,0 +1,138 @@
+[
+  {
+    "status": "danger",
+    "status_title": "Открытая дата",
+    "price": {
+      "current": "78 000",
+      "old": "110 000"
+    },
+    "date_end": "22.08.22",
+    "description": "Забронировать этот тур без привязки к&nbsp;определённой дате и&nbsp;выбрать заезд позже в&nbsp;любое время без дополнительной оплаты."
+  },
+  {
+    "price": {
+      "current": "78 000",
+      "old": "110 000"
+    },
+    "places_left": 1,
+    "date": {
+      "from": "18.08.2022",
+      "to": "02.09.2022"
+    },
+    "date_end": "22.08.22",
+    "gid": {
+      "avatar": "/assets/images/avatar.jpg",
+      "name": "Сергей",
+      "surname": "Пугачев",
+      "description": "Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»"
+    }
+  },
+  {
+    "price": {
+      "current": "78 000",
+      "old": "110 000"
+    },
+    "places_left": 1,
+    "date": {
+      "from": "18.08.2022",
+      "to": "02.09.2022"
+    },
+    "date_end": "22.08.22",
+    "gid": {
+      "avatar": "/assets/images/avatar.jpg",
+      "name": "Сергей",
+      "surname": "Пугачев",
+      "description": "Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»"
+    }
+  },
+  {
+    "price": {
+      "current": "78 000",
+      "old": "110 000"
+    },
+    "places_left": 1,
+    "date": {
+      "from": "18.08.2022",
+      "to": "02.09.2022"
+    },
+    "date_end": "22.08.22",
+    "gid": {
+      "avatar": "/assets/images/avatar.jpg",
+      "name": "Сергей",
+      "surname": "Пугачев",
+      "description": "Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»"
+    }
+  },
+  {
+    "price": {
+      "current": "78 000",
+      "old": "110 000"
+    },
+    "places_left": 1,
+    "date": {
+      "from": "18.08.2022",
+      "to": "02.09.2022"
+    },
+    "date_end": "22.08.22",
+    "gid": {
+      "avatar": "/assets/images/avatar.jpg",
+      "name": "Сергей",
+      "surname": "Пугачев",
+      "description": "Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»"
+    }
+  },
+  {
+    "price": {
+      "current": "78 000",
+      "old": "110 000"
+    },
+    "places_left": 1,
+    "date": {
+      "from": "18.08.2022",
+      "to": "02.09.2022"
+    },
+    "date_end": "22.08.22",
+    "gid": {
+      "avatar": "/assets/images/avatar.jpg",
+      "name": "Сергей",
+      "surname": "Пугачев",
+      "description": "Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»"
+    }
+  },
+  {
+    "price": {
+      "current": "78 000",
+      "old": "110 000"
+    },
+    "places_left": 1,
+    "date": {
+      "from": "18.08.2022",
+      "to": "02.09.2022"
+    },
+    "date_end": "22.08.22",
+    "gid": {
+      "avatar": "/assets/images/avatar.jpg",
+      "name": "Сергей",
+      "surname": "Пугачев",
+      "description": "Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»"
+    }
+  },
+  {
+    "price": {
+      "current": "78 000",
+      "old": "110 000"
+    },
+    "places_left": 1,
+    "date": {
+      "from": "18.08.2022",
+      "to": "02.09.2022"
+    },
+    "date_end": "22.08.22",
+    "gid": {
+      "avatar": "/assets/images/avatar.jpg",
+      "name": "Сергей",
+      "surname": "Пугачев",
+      "description": "Чемпион России, мастер спорта, автор книги «Дорога к&nbsp;вершинам»"
+    }
+  }
+]

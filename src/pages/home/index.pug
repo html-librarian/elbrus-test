@@ -1,0 +1,21 @@
+extends ../../layouts/default
+block vars
+    - var title = "Главная страница"
+    - var description = "Описание главной страницы"
+    - var lang = "ru"
+    - var pageName = "home"
+    - var custumStyle = true
+    - var custumScript = true
+
+block content
+    include ../../blocks/booking/booking
+
+block modal
+    +Modal({
+        id: "booking",
+        classes: "align-items-center justify-content-center",
+        slide: "left",
+        title: "Выберите заезд",
+        subtitle: "Восхождение на Килиманджаро",
+        data: booking
+    })

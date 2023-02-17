@@ -1,0 +1,11 @@
+$positions: (
+    "start": flex-start,
+    "end": flex-end,
+    "center": center
+);
+
+@each $name, $position in $positions {
+    .align-items-#{$name} {
+        align-items: $position;
+    }
+}
